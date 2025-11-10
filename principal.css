@@ -1,0 +1,449 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+    background-image: url(imagem_cristo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+    display: flex;
+     flex-direction: column;
+}
+
+                    /* HEADER */
+
+.cabecalho-principal {
+    background-color: #aa1313c4; 
+    padding: 10px 0;
+    border-bottom: 1px solid #b30000c4;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo-imagem {
+    height: 40%px;  
+    width: auto;   
+    margin-right: 20px; 
+    display: block; 
+}
+
+.container-busca {
+    display: flex;
+    flex-grow: 1; 
+    margin: 0 20px;
+}
+
+.container-busca input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px 0 0 2px; 
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+.container-busca button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    border-left: 1px solid #eee;
+    border-radius: 0 2px 2px 0; 
+    cursor: pointer;
+}
+
+.nav-principal a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: -1px -1px 0px #000000, -1px 1px 0px #000000, 1px -1px 0px #000000, 1px 1px 0px #000107;
+}
+
+/* ESTILOS DO CONTEÚDO PRINCIPAL */
+
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 20px auto; 
+}
+
+.conteudo-principal h2 {
+    font-size: 24px;
+    color: #444;
+}
+           /*  LAYOUT DE DUAS COLUNAS DA HOME */
+
+.container-duas-colunas {
+    display: flex; 
+    gap: 20px;     
+}
+
+
+.coluna-esquerda {
+    flex: 1; 
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.coluna-direita {
+    flex: 2; 
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.coluna-direita h2,
+.coluna-esquerda h2 {
+    margin-top: 0;
+}
+
+/*  ESTILOS DA GRADE DE PRODUTOS */
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; 
+}
+
+/*  ESTILOS DO CARD */
+
+.card-produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;  /* efeito legal */
+}
+
+.card-produto:hover {
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.8); 
+}
+
+.card-produto img {
+    width: 100%; 
+    border-bottom: 1px solid #eee;
+}
+
+.info-produto {
+    padding: 16px;
+}
+
+.info-produto .preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.info-produto .descricao {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+             /*ESTILOS DO RODAPÉ */
+
+
+.footer-beneficios {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #eee;
+}
+
+.container-beneficios {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-around; 
+    gap: 20px; 
+}
+
+.beneficio-item {
+    flex: 1; 
+    max-width: 350px;
+    text-align: center;
+}
+
+.icone-beneficio {
+    font-size: 36px; 
+    display: block;
+    margin-bottom: 16px;
+    color: #3483fa; 
+}
+
+.beneficio-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5; 
+}
+
+.beneficio-item a {
+    color: #3483fa;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.beneficio-item a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-legal {
+    background-color: #f5f5f5; 
+    padding: 30px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.container-legal {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-footer {
+    margin-bottom: 20px;
+}
+
+.nav-footer a {
+    font-size: 12px;
+    color: #555555;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+.nav-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #888;
+    margin: 5px 0;
+}
+                   /*ESTILOS DOS FORMULÁRIOS (Login/Cadastro)*/
+
+.form-container {
+    max-width: 400px; 
+    margin: 40px auto; 
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-formulario {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3483fa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-formulario:hover {
+    background-color: #2968c8; 
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-link a {
+    color: #3483fa;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+                 /* ESTILOS DA PÁGINA DE PRODUTO */
+
+.container-produto {
+    display: flex; 
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 24px;
+    margin-top: 20px;
+}
+
+
+.coluna-imagem {
+    flex: 1.5; 
+    padding-right: 20px;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+    display: block;
+}
+
+
+.coluna-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.info-condicao {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.info-titulo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.info-preco {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.preco-principal {
+    display: block;
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+}
+
+.preco-parcela {
+    font-size: 16px;
+    color: #00ff7b; 
+}
+
+.info-envio {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.envio-full {
+    background-color: #00a650;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+.btn-comprar {
+    background-color: #3483fa; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #2968c8;
+}
+
+.btn-carrinho {
+    background-color: rgba(52, 131, 250, 0.1); 
+    color: #3483fa; 
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-carrinho:hover {
+    background-color: rgba(52, 131, 250, 0.2);
+}
+.link-card {
+    text-decoration: none;
+    color: inherit; 
+}
+              /* IMG EFEITO DE FUNDO DESFOQUE  */
+
+
+.cabecalho-principal {
+    background-color: #aa1313c4; 
+    backdrop-filter: blur(5px); 
+}
+
+
+.card-produto,
+.form-container,
+.footer-beneficios,
+.container-produto, 
+.coluna-esquerda,   
+.coluna-direita,    
+.container-busca input, 
+.container-busca button { 
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px);
+}
+
+
+.footer-legal {
+    background-color: rgba(245, 245, 245, 0.85); 
+    backdrop-filter: blur(5px);
+}
+main {
+    flex-grow: 1; 
+}
